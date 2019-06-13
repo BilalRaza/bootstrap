@@ -94,12 +94,126 @@
                         <img src="img/logo.png" class="img-fluid">
                     </div>
                     <div class="col-sm-3 align-self-center">
-                        <button type="button" class="btn btn-warning btn-block btn-sm"> <a role="button" class="btn btn-block btn-warning nav-link" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+923319622303</strong></br>" data-placement="bottom" href="#reserve">Reserve Table</a></button>
+
+                        <button type="button" class="btn btn-warning btn-block btn-sm" data-toggle="modal" data-target="#reserve_tables">Reserve Table</button>
+
+ 
+
+                        
+                        <div id="reserve_tables" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <h3 style="color:black">Reserve a Table</h3>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                            <div class="row">
+                                                                    <dd class="col-sm-2  " style="color:black"><h5>Number of Guests</h5></dd>
+                                                                    <dd class="col-sm-auto">
+                                                                            <form style="color:black">
+                                                                                    <label class="radio-inline">
+                                                                                      <input type="radio" name="optradio" >  1 
+                                                                                    </label>
+                                                                                    <label class="radio-inline">
+                                                                                      <input type="radio" name="optradio">  2  
+                                                                                    </label>
+                                                                                    <label class="radio-inline">
+                                                                                      <input type="radio" name="optradio"> 3
+                                                                                    </label>
+                                                                                    <label class="radio-inline">
+                                                                                            <input type="radio" name="optradio"> 4
+                                                                                          </label>
+                                                                                          <label class="radio-inline">
+                                                                                                <input type="radio" name="optradio"> 5
+                                                                                              </label>
+                                                                                              <label class="radio-inline">
+                                                                                                    <input type="radio" name="optradio"> 6
+                                                                                                  </label>
+                                            
+                                                                                                  
+                                            
+                                                                                  </form>
+                                            
+                                                                    </dd>
+                                                                    
+                                                                  
+                                                                </div> 
+
+                                                                <div class="row" style="color:black">
+                                                                    <div class="col-sm-2 ">
+                                                                    <h5>Section</h5>
+                                                                </div>
+                                                                <div class="col-sm">
+                                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                                        <label class="btn btn-secondary btn-success active link">
+                                                                                <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
+                                                                              </label>
+                                                                              <label class="btn btn-secondary btn-danger">
+                                                                                <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                                                                              </label>
+
+                                        </div>
+                                                                </div>
+                                                          </div>
+                                      
+                                       
+
+                                        <div class=" row" style="color:black">
+                                                <dd class=" col-sm-2 h5">Date and Time</dd>
+                                                <dd>
+                                                        <form>
+                                                                
+                                                                <div class="form-group row">
+                                                                      
+                                                                        <div class=" col-12 col-md-6">
+                                                                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                                                        </div>
+                                                                    <div class="col-12 col-md-6">
+                                                                            <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                                                    </div>
+                                                                    </div>
+                                                                  
+                                                                
+                                                            </form>  
+                                                                  
+                                                             
+                                                </dd>
+                    
+                                        </div>
+
+
+
+
+
+    <button type="button" class=" offset-3  btn btn-secondary" data-toggle="button" data-dismiss="modal" aria-pressed="false" autocomplete="off">
+                Cancel
+              </button>
+                                           
+        <button type="button" class="   btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Reserve
+              </button>
+          
+
+ 
+                                      
+                                            
+
+                                  
+                    
+                        
+
 
                     </div>
+
             </div>
+
+            
         </div>
     </header>
+    
 
     <div class="container">
             <div class="row row-content">
@@ -210,6 +324,7 @@
         <div class="col-sm-2">
 
         </div>
+        <!---
         
     <div  class="col-12 col-sm-12 align-items-center">
         <div class="card" id="reserve">
@@ -281,6 +396,7 @@
 
 </div>
 </div>
+-->
    
 
     <footer class="footer">
@@ -329,11 +445,7 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script>
+
 </body>
 
 </html> 
